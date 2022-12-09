@@ -10,6 +10,7 @@ function generateRandomIntegerInRange(min, max) {
 const telegram = new Telegram(token)
 let user_id = -1001895823305
 const bot = new Telegraf(token)
+console.log("STARTING WITH USERID")
 bot.start(async (ctx) => {
     ctx.reply('Welcome')
     console.log(ctx.update.message.chat)
