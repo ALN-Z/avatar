@@ -16,11 +16,14 @@ bot.start(async (ctx) => {
     console.log(ctx.update.message.chat)
 })
 console.log("HELLO MAAAAAAAAAAAAAAAAAAAN")
+bot.launch()
+
 setInterval(
     ()=> {
         parse().then((data) =>
             {
                 console.log(data)
+                console.log("IM HEREEEEEEEEEEEEEE")
                 if(data){
                     telegram.sendPhoto(user_id, data.poster, {caption: `🎬🎬🎬 \n\n"${data.title}" - ФИЛЬМ ДОСТУПЕН! РЕБЯТА, ПОРА ПОКУПАТЬ БИЛЕТЫ! https://cinema.magiccity.uz/release/${data.id}\n\n 🎞🎞🎞`})
                 }
@@ -29,4 +32,3 @@ setInterval(
     }, generateRandomIntegerInRange(5000,10000)
 )
 
-bot.launch()
