@@ -15,6 +15,7 @@ bot.start(async (ctx) => {
     ctx.reply('Welcome')
     console.log(ctx.update.message.chat)
 })
+console.log("HELLO MAAAAAAAAAAAAAAAAAAAN")
 setInterval(
     ()=> {
         parse().then((data) =>
