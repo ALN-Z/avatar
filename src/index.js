@@ -22,7 +22,7 @@ module.exports = function doFetch() {
             if(JSON.parse(text).releases){
                 let data = JSON.parse(text).releases
                 for(let movie of data) {
-                    const regex = /(аватар|avatar)/gim
+                    const regex = /(аватар|avatar|Приключения Тедди)/gim
                     if(regex.test(movie.title)){
                     return movie
                     }
