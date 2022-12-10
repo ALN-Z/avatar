@@ -16,7 +16,7 @@ bot.start(async (ctx) => {
     console.log(ctx.update.message.chat)
 })
 console.log("HELLO MAAAAAAAAAAAAAAAAAAAN")
-bot.launch()
+
 
 setInterval(
     ()=> {
@@ -31,4 +31,4 @@ setInterval(
         )
     }, generateRandomIntegerInRange(5000,10000)
 )
-
+bot.launch()
